@@ -2,7 +2,7 @@ from random import shuffle
 import sys
 
 print('\n\nYour Quiz Starting...\n\nYour args passed in are:')
-for arg in sys.argv: print arg
+for arg in sys.argv: print (arg)
 
 questionFile=''
 if (len(sys.argv)<=1):
@@ -19,11 +19,11 @@ shuffle(lines)
 numRight = 0
 wrong = []
 
-numQuestions = int(raw_input("How many questions? "))
+numQuestions = int(input("How many questions? "))
 try:
  for line in lines[:numQuestions]:
   question, rightAnswer = line.strip().split("\t")
-  answer = raw_input(question + ' ')
+  answer = input(question + ' ')
   if answer.upper().strip() == rightAnswer.upper().strip():
    print('Right!')
    numRight += 1
