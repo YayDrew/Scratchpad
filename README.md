@@ -1,6 +1,6 @@
 # This is my scratchpad for experimenting and learning with my brother.
 
-# Things to consider:  when working with data (files vs. databases etc.)
+### Things to consider:  when working with data (files vs. databases etc.)
 # Acid  
 * Atomicity: all or nothing
 * Consistency: rules will be followed  ex. uniqueness of data 
