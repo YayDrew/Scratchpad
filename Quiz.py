@@ -16,7 +16,7 @@ for arg in sys.argv:
 # argstring had to be outside of the loop so that it could grow
 print(argstring)
 
-# we're defining a variable with a string that we'll access later
+# we're defining a variable with an empty string that we'll fill later
 questionFile=''
 if (len(sys.argv)==1):
  print('\nsys.argv has length of: %s' % len(sys.argv))
@@ -35,7 +35,7 @@ wrong = []
 numQuestions = int(input("How many questions? "))
 try:
  for line in lines[:numQuestions]:
-  print(line)
+  # print(line)
   question, rightAnswer = line.strip().split("~")
   answer = input(question + ' ')
   if answer.upper().strip() == rightAnswer.upper().strip():
