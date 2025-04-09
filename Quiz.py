@@ -2,10 +2,23 @@ from random import shuffle
 import sys
 
 print('\n\nYour Quiz Starting...\n\nYour args passed in are:')
-for arg in sys.argv: print (arg)
 
+argstring=""
+for arg in sys.argv:
+  
+# In the terminal readout, when loading arguments, separated by spaces, 
+# subsequent arguments will be printed in sequence
+  #print (arg)
+  argstring+=arg
+  # because we're in a loop, we repeat
+  # argstring = argstring plus arg 
+  argstring+=", "
+# argstring had to be outside of the loop so that it could grow
+print(argstring)
+
+# we're defining a variable with a string that we'll access later
 questionFile=''
-if (len(sys.argv)<=1):
+if (len(sys.argv)==1):
  print('\nsys.argv has length of: %s' % len(sys.argv))
  questionFile="mytest.tsv"
  print('You will be tested from questions in the default file: mytest.tsv')
@@ -22,7 +35,8 @@ wrong = []
 numQuestions = int(input("How many questions? "))
 try:
  for line in lines[:numQuestions]:
-  question, rightAnswer = line.strip().split("\t")
+  print(line)
+  question, rightAnswer = line.strip().split("~")
   answer = input(question + ' ')
   if answer.upper().strip() == rightAnswer.upper().strip():
    print('Right!')
