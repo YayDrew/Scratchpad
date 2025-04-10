@@ -33,3 +33,8 @@ VALUES
 ('A3', 'Databases', 'In ACID the "I" stands for', 'Isolation'),
 ('A4', 'Databases', 'In ACID the "D" stands for', 'Durability'),
 ('A5', 'Trivia', 'Brothers are precious', 'Indeed');
+
+# Example updates
+UPDATE Q_and_A
+SET answer = 'a color formed by mixing blue and red'
+WHERE id = 'A6';
