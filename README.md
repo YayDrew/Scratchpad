@@ -9,7 +9,7 @@
 
 # a possible schema
 
-|                                   question                                    |                    answer                          |
-| ------------------------------------------------------------------------------ | ------------------------------------------------------- |
-| in ACID the "A" stands for                                               | Atomicity       |
-| in ACID the "C" stands for                                         | Consistency |
+|      ID       |    Topic    |             question                  |       answer         |
+| --------------------------------------- | --------------------------------------- || --------------------------------------- | --------------------------------------- |
+| A1 | Databases | in ACID the "A" stands for                                               | Atomicity       |
+| A2 | Databases| in ACID the "C" stands for                                         | Consistency |
