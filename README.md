@@ -7,9 +7,9 @@
 * Isolation: if two threads touch the same data, who wins? eg. serializable
 * Durability: like the pyramids, whatever you change is permanent
 
-# a possible schema
+# A Possible Schema
 
-|      ID       |    Topic    |             question                  |       answer         |
-| --------------------------------------- | --------------------------------------- || --------------------------------------- | --------------------------------------- |
-| A1 | Databases | in ACID the "A" stands for                                               | Atomicity       |
-| A2 | Databases| in ACID the "C" stands for                                         | Consistency |
+| ID  | Topic     | Question                          | Answer       |
+|-----|-----------|-----------------------------------|--------------|
+| A1  | Databases | In ACID the "A" stands for        | Atomicity    |
+| A2  | Databases | In ACID the "C" stands for        | Consistency  |
