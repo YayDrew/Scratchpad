@@ -16,3 +16,20 @@
 | A3  | Databases | In ACID the "I" stands for        | Isolation    |
 | A4  | Databases | In ACID the "D" stands for        | Durability   |
 | A5  | Trivia    | Brothers are precious             | Indeed       |
+
+
+# Create statement for the above table
+CREATE TABLE Q_and_A (
+    id VARCHAR(10) PRIMARY KEY,
+    topic TEXT,
+    question TEXT,
+    answer TEXT
+);
+# Sample inserts (thank you chat gpt)
+INSERT INTO Q_and_A (id, topic, question, answer)
+VALUES 
+('A1', 'Databases', 'In ACID the "A" stands for', 'Atomicity'),
+('A2', 'Databases', 'In ACID the "C" stands for', 'Consistency'),
+('A3', 'Databases', 'In ACID the "I" stands for', 'Isolation'),
+('A4', 'Databases', 'In ACID the "D" stands for', 'Durability'),
+('A5', 'Trivia', 'Brothers are precious', 'Indeed');
