@@ -40,7 +40,7 @@ SET answer = 'a color formed by mixing blue and red'
 WHERE id = 'A6';
 
 # Example queries
-select * from Q_and_A where id='A6';
+'''select * from Q_and_A where id='A6';
  id | topic  |    question     |   answer
 ----+--------+-----------------+-------------
- A6 | TRIVIA | What is purple? | brain magic
+ A6 | TRIVIA | What is purple? | brain magic'''
