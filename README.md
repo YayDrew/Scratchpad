@@ -6,3 +6,10 @@
 * Consistency: rules will be followed  ex. uniqueness of data 
 * Isolation: if two threads touch the same data, who wins? eg. serializable
 * Durability: like the pyramids, whatever you change is permanent
+
+# a possible schema
+
+|                                   question                                    |                    answer                          |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------- |
+| in ACID the "A" stands for                                               | Atomicity       |
+| in ACID the "C" stands for                                         | Consistency |
