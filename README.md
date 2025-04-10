@@ -15,3 +15,4 @@
 | A2  | Databases | In ACID the "C" stands for        | Consistency  |
 | A3  | Databases | In ACID the "I" stands for        | Isolation    |
 | A4  | Databases | In ACID the "D" stands for        | Durability   |
+| A5  | Trivia    | Brothers are precious             | Indeed       |
