@@ -44,3 +44,65 @@ select * from Q_and_A where id='A6';
 | id | topic  |  question |  answer  |
 |----|--------|-----------------|-------------|
 | A6 | TRIVIA | What is purple? | brain magic |
+
+## Python-preparation Steps for running the program on your machine:
+
+
+1. Create a virtual environment:
+
+```
+python3 -m venv Quiz
+```
+
+2. Activate it:  [This step is repeated anytime you want this venv back]
+
+```
+source Quiz/bin/activate
+```
+
+On windows you would do:
+
+```
+Quiz\Scripts\activate
+```
+If no permission in Windows
+ The Fix (Temporary, Safe, Local):
+In PowerShell as Administrator, run:
+```
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+Then confirm with Y when prompted.
+
+
+
+3. Python will utilize this requirements.txt in the project:
+
+```
+psycopg[binary]
+
+```
+
+4. Install the libraries: [only necesary to do this one time per environment]
+
+```
+pip3 install -r requirements.txt
+```
+
+#import psycopg
+
+def connect_to_db():
+    try:
+        # Adjust these parameters for your setup
+        conn = psycopg.connect(
+            dbname="your_database",
+            user="your_username",
+            password="your_password",
+            host="localhost",
+            port=5432
+        )
+        print("✅ Connection successful")
+        return conn
+    except Exception as e:
+        print("❌ Connection failed:", e)
+        return None
